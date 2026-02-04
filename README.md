@@ -72,6 +72,35 @@ Exportar señales a JSON:
 python -m value_alert_bot.cli export --out signals.json
 ```
 
+### Uso en Google Colab (rápido)
+
+Si ves el error:
+
+```
+ERROR: file:///content/value-alert-bot does not appear to be a Python project
+```
+
+significa que **no estás en la carpeta del proyecto** o que no lo clonaste en Colab. Usa estos pasos:
+
+```bash
+!git clone <URL_DEL_REPO> value-alert-bot
+%cd value-alert-bot
+!pip install -e .
+```
+
+Luego define variables de entorno en una celda:
+
+```python
+import os
+os.environ["ODDS_API_KEY"] = "TU_API_KEY"
+```
+
+Y ejecuta:
+
+```bash
+!python -m value_alert_bot.cli run --dry-run
+```
+
 ### Programar con cron
 
 Ver ejemplo en `scripts/cron_example.txt`.
