@@ -1,0 +1,36 @@
+[
+  {
+    "id": "event_1",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea",
+    "commence_time": "2025-01-01T12:30:00Z",
+    "bookmakers": [
+      {
+        "key": "bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {"name": "Arsenal", "price": 2.1},
+              {"name": "Draw", "price": 3.4},
+              {"name": "Chelsea", "price": 4.2}
+            ]
+          }
+        ]
+      },
+      {
+        "key": "pinnacle",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {"name": "Arsenal", "price": 2.05},
+              {"name": "Draw", "price": 3.5},
+              {"name": "Chelsea", "price": 4.1}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

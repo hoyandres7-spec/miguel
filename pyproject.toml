@@ -1,0 +1,28 @@
+[project]
+name = "value-alert-bot"
+version = "0.1.0"
+description = "Bot de alertas de valor en apuestas deportivas basado en cuotas e Elo simple."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Value Alert Bot"}]
+dependencies = [
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+]
+
+[project.scripts]
+value-alert-bot = "value_alert_bot.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,2 @@
+# Ejecuta cada hora y guarda logs
+0 * * * * cd /path/to/value-alert-bot && /path/to/.venv/bin/python -m value_alert_bot.cli run >> /var/log/value-alert-bot.log 2>&1
